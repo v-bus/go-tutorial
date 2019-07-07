@@ -3,3 +3,5 @@ pkg/
 bin/
 *.exe
 *.a
+src/github.com/
+src/golang.org/
