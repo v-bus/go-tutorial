@@ -5,59 +5,56 @@ Contains examples of:
 
 ## Introduction
 
-* Hello World
+* Hello World - [src/hello/](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/hello)
 
 ## Variables, Types and Constants
 
 * Variables
 
-* Types
+* Types   - [src/float](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/float)
+          - [src/string](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/string)
 
-* Constants
+* Constants - [src/constants/constants.go](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/constants)
 
 ## Functions and Packages
 
-* Functions
+* Functions - [src/geometry](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/geometry)
 
-* Packages
+* Packages - [src/geometry](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/geometry)
 
 ## Conditional Statements and Loops
 
 * if else statement
 
-* Loops
+* Loops - [src/loop](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/loop)
 
-* Switch Statement
+* Switch Statement - [src/switch](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/switch)
 
 ## Arrays, Slices and Variadic Functions
 
-* Arrays and Slices
+* Arrays and Slices - [src/array](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/array)
 
-* Variadic Functions
+* Variadic Functions - [src/tryvariadic](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/tryvariadic)
 
 ## More types
 
-* Maps
+* Maps - [src/trymaps](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/trymaps)
 
-* Strings
+* Strings - [src/trystrings](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/trystrings)
 
 ## Pointers, Structures and Methods
-* Pointers
+* Pointers - [src/pointer](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/pointer)
 
-* Structures
+* Structures - [src/structures](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/structures)
 
-* Methods
+* Methods - [src/methods](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/methods)
 
 ## Interfaces
 
-* Interfaces - I
-
-* Interfaces - II
+* Interfaces - [src/interfaces](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/interfaces)
 
 ## Concurrency
-
-* Introduction to Concurrency
-
+[src/concurrency](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/concurrency)
 * Goroutines
 
 * Channels
@@ -69,6 +66,7 @@ Contains examples of:
 * Mutex
 
 ## Object Oriented Programming
+[src/classes/oop](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/classes/oop)
 
 * Structs Instead of Classes
 
