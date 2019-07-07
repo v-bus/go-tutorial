@@ -5,74 +5,72 @@ Contains examples of:
 
 ## Introduction
 
-1 - Introduction and Installation 
-
-2 - Hello World
+* Hello World
 
 ## Variables, Types and Constants
 
-3 - Variables
+* Variables
 
-4 - Types
+* Types
 
-5 - Constants
+* Constants
 
 ## Functions and Packages
 
-6 - Functions
+* Functions
 
-7 - Packages
+* Packages
 
 ## Conditional Statements and Loops
 
-8 - if else statement
+* if else statement
 
-9 - Loops
+* Loops
 
-10 - Switch Statement
+* Switch Statement
 
 ## Arrays, Slices and Variadic Functions
 
-11 - Arrays and Slices
+* Arrays and Slices
 
-12 - Variadic Functions
+* Variadic Functions
 
 ## More types
 
-13 - Maps
+* Maps
 
-14 - Strings
+* Strings
 
 ## Pointers, Structures and Methods
-15 - Pointers
+* Pointers
 
-16 - Structures
+* Structures
 
-17 - Methods
+* Methods
 
 ## Interfaces
 
-18 - Interfaces - I
+* Interfaces - I
 
-19 - Interfaces - II
+* Interfaces - II
 
 ## Concurrency
 
-20 - Introduction to Concurrency
+* Introduction to Concurrency
 
-21 - Goroutines
+* Goroutines
 
-22 - Channels
+* Channels
 
-23 - Buffered Channels and Worker Pools
+* Buffered Channels and Worker Pools
 
-24 - Select
+* Select
 
-25 - Mutex
+* Mutex
 
 ## Object Oriented Programming
 
-26 - Structs Instead of Classes
+* Structs Instead of Classes
 
-27 - Composition Instead of Inheritance
+* Composition Instead of Inheritance
 
