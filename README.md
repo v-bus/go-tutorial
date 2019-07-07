@@ -11,8 +11,10 @@ Contains examples of:
 
 ## Variables, Types and Constants
 
-3 - Variables 
-4 - Types 
+3 - Variables
+
+4 - Types
+
 5 - Constants
 
 ## Functions and Packages
