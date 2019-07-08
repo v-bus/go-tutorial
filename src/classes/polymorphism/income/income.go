@@ -19,6 +19,18 @@ type FixedBilling struct {
 	biddedAmount int
 }
 
+//Advertisement new income stream
+type Advertisement struct {
+	adName     string
+	cPC        int
+	noOfClicks int
+}
+
+//NewAdvertisement new func of Advertisement struct
+func NewAdvertisement(adName string, CPC, noOfClicks int) *Advertisement {
+	return &Advertisement{adName, CPC, noOfClicks}
+}
+
 //NewFixedBilling new func of FixedBilling struct
 func NewFixedBilling(projectName string, biddedAmount int) *FixedBilling {
 	return &FixedBilling{projectName, biddedAmount}
@@ -52,6 +64,13 @@ func (tam TimeAndMaterial) source() string {
 	return tam.projectName
 }
 
+func (a Advertisement) calculate() int {
+	return a.cPC * a.noOfClicks
+}
+
+func (a Advertisement) source() string {
+	return a.adName
+}
 
 //CalculateNetIncome calculates and prints the total income
 func CalculateNetIncome(ic []Income) {
