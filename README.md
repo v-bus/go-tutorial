@@ -1,7 +1,9 @@
 # go-tutorial
 
-Golang code by https://golangbot.com go tutorial
-Contains examples of:
+Golang code by https://golangbot.com 
+go tutorial by (c) Naveen Ramanathan
+
+*Contains examples of:*
 
 ## Introduction
 
@@ -72,3 +74,11 @@ Contains examples of:
 
 * Composition Instead of Inheritance
 
+* Polymorphism [src\classes\polymorphism](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/classes/polymorphism)
+
+## Defer and Error Handling
+* Defer [src\trydefer](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/trydefer)
+* Error Handling [src\tryerrors](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/tryerrors)
+* Custom Errors [src\tryerrors\customerrors](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/tryerrors/customerrors)
+* Panic and Recover [src\trypanic](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/trypanic)
+ * Runtime Errors Recover and Trace Stack print [src\trypanic\runtimepanic](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/trypanic/runtimepanic)
