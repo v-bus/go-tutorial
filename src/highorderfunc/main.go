@@ -10,4 +10,5 @@ func main() {
 	funcs.RunHighOrderReturnFunc()
 
 	closures.SimpleClosureExample()
+	closures.RunClosureAppendStr()
 }
