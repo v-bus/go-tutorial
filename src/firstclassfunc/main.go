@@ -2,6 +2,7 @@
 package main
 
 import (
+	"firstclassfunc/usertypefunc"
 	"firstclassfunc/anonfunc"
 )
 
@@ -9,4 +10,6 @@ func main() {
 	anonfunc.AssignFuncToVariable()
 	anonfunc.CallAnonFunc()
 	anonfunc.PassArgToAnonFunc()
+
+	usertypefunc.DefUseTypedFunc()
 }
