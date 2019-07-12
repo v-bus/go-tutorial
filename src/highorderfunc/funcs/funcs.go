@@ -8,7 +8,7 @@ func simple(a func(a int, b int) int) {
 
 //RunHighOrderFunc runs high-ordered function simple()
 func RunHighOrderFunc() {
-	//simple func is high-ordered cause it apply func as incomong attribute
+	//simple func is high-ordered because it applies func as incomong attribute
 	f := func(a int, b int) int {
 		return a + b
 	}
