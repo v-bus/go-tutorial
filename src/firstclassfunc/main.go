@@ -2,6 +2,7 @@
 package main
 
 import (
+	"firstclassfunc/mapfunc"
 	"firstclassfunc/students"
 	"firstclassfunc/usertypefunc"
 	"firstclassfunc/anonfunc"
@@ -15,4 +16,7 @@ func main() {
 	usertypefunc.DefUseTypedFunc()
 
 	students.RunStudentFilter()
+
+	mapfunc.RunIntMapMultiplyTo5()
+	mapfunc.RunIntDivByNom()
 }
