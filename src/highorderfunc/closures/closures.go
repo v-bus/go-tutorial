@@ -12,3 +12,27 @@ func SimpleClosureExample() {
 		fmt.Println("SimpleClosureExample() --> a := ", a)
 	}()
 }
+
+//Every closure is bound to its own surrounding variable
+func appendString() func(string) string {
+	t := "Hello"
+	c := func(s string) string {
+		t = t + " " + s
+		return t
+	}
+	return c
+}
+
+//RunClosureAppendStr runs closure functions example
+//appendString which returns func(string) string
+//this resulted func is called 4 times
+func RunClosureAppendStr() {
+	a := appendString()
+	b := appendString()
+
+	fmt.Println(a("World"))
+	fmt.Println(b("Everybody"))
+
+	fmt.Println(a("Chase"))
+	fmt.Println(b("!"))
+}
