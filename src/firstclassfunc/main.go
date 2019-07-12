@@ -2,6 +2,7 @@
 package main
 
 import (
+	"firstclassfunc/students"
 	"firstclassfunc/usertypefunc"
 	"firstclassfunc/anonfunc"
 )
@@ -12,4 +13,6 @@ func main() {
 	anonfunc.PassArgToAnonFunc()
 
 	usertypefunc.DefUseTypedFunc()
+
+	students.RunStudentFilter()
 }
