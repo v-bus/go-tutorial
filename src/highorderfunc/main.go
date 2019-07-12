@@ -4,6 +4,7 @@ import (
 	"highorderfunc/funcs"
 )
 
-func main(){
+func main() {
 	funcs.RunHighOrderFuncAttr()
+	funcs.RunHighOrderReturnFunc()
 }
