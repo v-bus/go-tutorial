@@ -7,4 +7,6 @@ import (
 
 func main() {
 	anonfunc.AssignFuncToVariable()
+	anonfunc.CallAnonFunc()
+	anonfunc.PassArgToAnonFunc()
 }
