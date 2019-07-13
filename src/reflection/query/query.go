@@ -14,8 +14,10 @@ type order struct {
 func createQuery(i interface{}) {
 	t := reflect.TypeOf(i)
 	v := reflect.ValueOf(i)
+	k := t.Kind()
 	fmt.Println("Type ", t)
 	fmt.Println("Value ", v)
+	fmt.Println("Kind ", k)
 
 }
 
