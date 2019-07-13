@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	query.RunCreateQueryPrintTV()
+	query.PrintAllQueries()
 }
