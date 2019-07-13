@@ -47,12 +47,14 @@ func createQueryPrintFields(i interface{}) {
 		}
 	}
 }
+
 //createQueryPrintQuery prints query concatenated of struct fields
 //incoming interface should be struct
 func createQueryPrintQuery(i interface{}) {
 	defer recoverFieldCalls()
 	if t := reflect.TypeOf(i); t.Kind() == reflect.Struct {
-		query := fmt.Sprintf("insert into %s values(", t.Name())
+		query := "values("
+		structFieldNames := fmt.Sprintf("insert into %s(", t.Name())
 		v := reflect.ValueOf(i)
 		for cnt := 0; cnt < v.NumField(); cnt++ {
 			switch v.Field(cnt).Kind() {
@@ -72,8 +74,14 @@ func createQueryPrintQuery(i interface{}) {
 				fmt.Println("Unsupported type")
 				return
 			}
+
+			if cnt == 0 {
+				structFieldNames = fmt.Sprintf("%s%s", structFieldNames, t.Field(cnt).Name)
+			} else {
+				structFieldNames = fmt.Sprintf("%s, %s", structFieldNames, t.Field(cnt).Name)
+			}
 		}
-		query = fmt.Sprintf("%s)", query)
+		query = fmt.Sprintf("%s) %s)", structFieldNames, query)
 		fmt.Println(query)
 		return
 	}
@@ -90,11 +98,11 @@ func PrintAllQueries() {
 	}
 
 	e := employee{
-		name: "Mikhail Gorhgn",
-		id: 5,
+		name:    "Mikhail Gorhgn",
+		id:      5,
 		address: "Moscow, Kremlin",
 		country: "RU",
-		salary: 5000,
+		salary:  5000,
 	}
 	createQuery(o)
 	createQueryPrintFields(o)
