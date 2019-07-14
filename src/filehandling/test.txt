@@ -1,1 +1,2 @@
 Hello World. Welcome to file handling in Go.
+packr converts static files such as .txt to .go files which are then embedded directly into the binary. Packer is intelligent enough to fetch the static files from disk rather than from the binary during development. This prevents the need for re-compilation during development when only static files change.
