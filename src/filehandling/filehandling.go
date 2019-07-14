@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"io/ioutil"
 	"os"
@@ -17,6 +18,7 @@ func openTestFileByName() {
 
 		return
 	}
+	fmt.Println("File name: ", "test.txt")
 	fmt.Println("File data: ", string(data))
 }
 func getMultArg(args ...interface{}) []interface{} {
@@ -25,7 +27,7 @@ func getMultArg(args ...interface{}) []interface{} {
 func openTestFileAbsoluteFilePath() {
 	fileName := fmt.Sprint(
 		getMultArg(os.LookupEnv("GOPATH"))[0],
-		string(filepath.Separator),
+		
 		"src",
 		string(filepath.Separator),
 		"filehandling",
@@ -39,9 +41,27 @@ func openTestFileAbsoluteFilePath() {
 
 		return
 	}
+	fmt.Println("File name: ", fileName)
+	fmt.Println("File data: ", string(data))
+}
+
+func openTestFileByArgFlag(){
+	fptr := flag.String("fpath", "text.txt", "file path to read file")
+	flag.Parse()
+	fileName := *fptr
+	data, err := ioutil.ReadFile(fileName)
+	if err != nil {
+		fmt.Println("File", fileName, " was not read")
+		fmt.Println(filepatherrors.ReturnNames(fileName))
+		fmt.Println(filepatherrors.ReturnNames("*"))
+
+		return
+	}
+	fmt.Println("File name: ", fileName) 
 	fmt.Println("File data: ", string(data))
 }
 func main() {
 	openTestFileByName()
 	openTestFileAbsoluteFilePath()
+	openTestFileByArgFlag()
 }
