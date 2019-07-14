@@ -1,13 +1,14 @@
 package main
 
 import (
-	"github.com/gobuffalo/packr/v2"
 	"flag"
 	"fmt"
 	"io/ioutil"
 	"os"
 	"path/filepath"
 	"tryerrors/filepatherrors"
+
+	"github.com/gobuffalo/packr"
 )
 
 func openTestFileByName() {
@@ -28,7 +29,7 @@ func getMultArg(args ...interface{}) []interface{} {
 func openTestFileAbsoluteFilePath() {
 	fileName := fmt.Sprint(
 		getMultArg(os.LookupEnv("GOPATH"))[0],
-		
+
 		"src",
 		string(filepath.Separator),
 		"filehandling",
@@ -46,7 +47,7 @@ func openTestFileAbsoluteFilePath() {
 	fmt.Println("File data: ", string(data))
 }
 
-func openTestFileByArgFlag(){
+func openTestFileByArgFlag() {
 	fptr := flag.String("fpath", "test.txt", "file path to read file")
 	flag.Parse()
 	fileName := *fptr
@@ -58,12 +59,13 @@ func openTestFileByArgFlag(){
 
 		return
 	}
-	fmt.Println("File name: ", fileName) 
+	fmt.Println("File name: ", fileName)
 	fmt.Println("File data: ", string(data))
 }
 
-func openTestFileByPackrBox(){
-	box:=packr.NewBox(fmt.Sprint("..", string(filepath.Separator), "filehandling"))
+func openTestFileByPackrBox() {
+
+	box := packr.NewBox("..\filehandling")
 	data := box.String("test.txt")
 	fmt.Println("Content of test.txt:", data)
 }
