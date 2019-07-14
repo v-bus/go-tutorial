@@ -102,15 +102,50 @@ func openTestFileByBufio3Bytes() {
 		}
 	}()
 	r := bufio.NewReader(fh)
-	
-	for  {
+
+	for {
 		b := make([]byte, 3)
 		_, err = r.Read(b)
-		if err!=nil{
-			fmt.Println("Error reading file:",err)
+		if err != nil {
+			fmt.Println("Error reading file:", err)
 			break
 		}
 		fmt.Println(string(b))
+	}
+}
+func openTestFileByBufioScan() {
+	fmt.Println("openTestFileByBufioScan()")
+	var fptr *string //flag string argument pointer
+	defer func() {
+		if r := recover(); r != nil {
+			log.Fatal(r)
+		}
+	}()
+	if flag.Lookup("fpath") == nil {
+		fptr = flag.String("fpath", "test.txt", "open test.txt file by 3 bytes")
+	} else {
+		fstr := flag.Lookup("fpath").Value.String()
+		fptr = &fstr
+		fmt.Println(*fptr)
+	}
+	flag.Parse() //do after flags parameters set
+
+	fh, err := os.Open(*fptr)
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer func() {
+		if err = fh.Close(); err != nil {
+			log.Fatal(err)
+		}
+	}()
+	s := bufio.NewScanner(fh)
+	for s.Scan() {
+		fmt.Println(s.Text())
+	}
+	err = s.Err()
+	if err != nil {
+		log.Fatal(err)
 	}
 }
 func main() {
@@ -119,4 +154,5 @@ func main() {
 	openTestFileByArgFlag()
 	openTestFileByPackrBox()
 	openTestFileByBufio3Bytes()
+	openTestFileByBufioScan()
 }
