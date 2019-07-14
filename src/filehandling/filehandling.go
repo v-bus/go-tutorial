@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/gobuffalo/packr/v2"
 	"flag"
 	"fmt"
 	"io/ioutil"
@@ -60,8 +61,15 @@ func openTestFileByArgFlag(){
 	fmt.Println("File name: ", fileName) 
 	fmt.Println("File data: ", string(data))
 }
+
+func openTestFileByPackrBox(){
+	box:=packr.NewBox(fmt.Sprint("..", string(filepath.Separator), "filehandling"))
+	data := box.String("test.txt")
+	fmt.Println("Content of test.txt:", data)
+}
 func main() {
 	openTestFileByName()
 	openTestFileAbsoluteFilePath()
 	openTestFileByArgFlag()
+	openTestFileByPackrBox()
 }
