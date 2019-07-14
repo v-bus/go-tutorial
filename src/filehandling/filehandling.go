@@ -46,7 +46,7 @@ func openTestFileAbsoluteFilePath() {
 }
 
 func openTestFileByArgFlag(){
-	fptr := flag.String("fpath", "text.txt", "file path to read file")
+	fptr := flag.String("fpath", "test.txt", "file path to read file")
 	flag.Parse()
 	fileName := *fptr
 	data, err := ioutil.ReadFile(fileName)
