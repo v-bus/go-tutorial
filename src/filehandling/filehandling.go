@@ -103,15 +103,15 @@ func openTestFileByBufio3Bytes() {
 	}()
 	r := bufio.NewReader(fh)
 
-	for {
+	for err==nil{
 		b := make([]byte, 3)
 		_, err = r.Read(b)
-		if err != nil {
-			fmt.Println("Error reading file:", err)
-			break
-		}
+		
 		fmt.Println(string(b))
 	}
+	if err != nil {
+			fmt.Println("Error reading file:", err)
+		}
 }
 func openTestFileByBufioScan() {
 	fmt.Println("openTestFileByBufioScan()")
