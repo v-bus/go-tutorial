@@ -84,19 +84,19 @@ go tutorial by (c) Naveen Ramanathan
  * Runtime Errors Recover and Trace Stack print [src\trypanic\runtimepanic](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/trypanic/runtimepanic)
 
 ## First Class Functions
-* First Class Functions [src\firstclassfunc](https://github.com/viktor-bushmin/go-tutorial/src/firstclassfunc)
-    * anonymous functions [src\firstclassfunc\anonfunc](https://github.com/viktor-bushmin/go-tutorial/src/firstclassfunc/anonfunc)
-    * function as attribute or returned value [src\firstclassfunc\anonfunc](https://github.com/viktor-bushmin/go-tutorial/src/firstclassfunc/anonfunc)
-    * user typed functions [src\firstclassfunc\usertypefunc](https://github.com/viktor-bushmin/go-tutorial/src/firstclassfunc/usertypefunc)
-    * map integer [src\firstclassfunc\mapfunc](https://github.com/viktor-bushmin/go-tutorial/src/firstclassfunc/mapfunc)
-    * closures [src\firstclassfunc\students](https://github.com/viktor-bushmin/go-tutorial/src/firstclassfunc/students)
+* First Class Functions [src\firstclassfunc](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/firstclassfunc)
+    * anonymous functions [src\firstclassfunc\anonfunc](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/firstclassfunc/anonfunc)
+    * function as attribute or returned value [src\firstclassfunc\anonfunc](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/firstclassfunc/anonfunc)
+    * user typed functions [src\firstclassfunc\usertypefunc](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/firstclassfunc/usertypefunc)
+    * map integer [src\firstclassfunc\mapfunc](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/firstclassfunc/mapfunc)
+    * closures [src\firstclassfunc\students](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/firstclassfunc/students)
 
 ## Reflection
-* Reflection [src\reflection](https://github.com/viktor-bushmin/go-tutorial/src/firstclassfunc/reflection)
+* Reflection [src\reflection](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/firstclassfunc/reflection)
 
 ## Filehandling
-* Reading Files [src\filehandling](https://github.com/viktor-bushmin/go-tutorial/src/firstclassfunc/filehandling)
+* Reading Files [src\filehandling](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/firstclassfunc/filehandling)
    * read from file using `ioutil` (also using command-line flags `flag`)
    * read using  `packr` incapsulated file to binary code
    * read using `bufio` byte read and scanline
-* Writing Files [src\filehandling\write2file](https://github.com/viktor-bushmin/go-tutorial/src/firstclassfunc/write2file)
+* Writing Files [src\filehandling\write2file](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/firstclassfunc/write2file)
