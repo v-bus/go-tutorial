@@ -82,3 +82,21 @@ go tutorial by (c) Naveen Ramanathan
 * Custom Errors [src\tryerrors\customerrors](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/tryerrors/customerrors)
 * Panic and Recover [src\trypanic](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/trypanic)
  * Runtime Errors Recover and Trace Stack print [src\trypanic\runtimepanic](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/trypanic/runtimepanic)
+
+## First Class Functions
+* First Class Functions [src\firstclassfunc](https://github.com/viktor-bushmin/go-tutorial/src/firstclassfunc)
+ * anonymous functions [src\firstclassfunc\anonfunc](https://github.com/viktor-bushmin/go-tutorial/src/firstclassfunc/anonfunc)
+ * function as attribute or returned value [src\firstclassfunc\anonfunc](https://github.com/viktor-bushmin/go-tutorial/src/firstclassfunc/anonfunc)
+ * user typed functions [src\firstclassfunc\usertypefunc](https://github.com/viktor-bushmin/go-tutorial/src/firstclassfunc/usertypefunc)
+ * map integer [src\firstclassfunc\mapfunc](https://github.com/viktor-bushmin/go-tutorial/src/firstclassfunc/mapfunc)
+ * closures [src\firstclassfunc\students](https://github.com/viktor-bushmin/go-tutorial/src/firstclassfunc/students)
+
+## Reflection
+* Reflection [src\reflection](https://github.com/viktor-bushmin/go-tutorial/src/firstclassfunc/reflection)
+
+## Filehandling
+* Reading Files [src\filehandling](https://github.com/viktor-bushmin/go-tutorial/src/firstclassfunc/filehandling)
+ * read from file using `ioutil` (also using command-line flags `flag`)
+ * read using  `packr` incapsulated file to binary code
+ * read using `bufio` byte read and scanline
+* Writing Files
