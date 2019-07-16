@@ -13,6 +13,11 @@ import (
 	"github.com/gobuffalo/packr"
 )
 
+func init() {
+	log.SetOutput(os.Stdout)
+	log.SetOutput(os.Stderr)
+}
+
 func openTestFileByName() {
 	data, err := ioutil.ReadFile("test.txt")
 	if err != nil {
@@ -103,15 +108,15 @@ func openTestFileByBufio3Bytes() {
 	}()
 	r := bufio.NewReader(fh)
 
-	for err==nil{
+	for err == nil {
 		b := make([]byte, 3)
 		_, err = r.Read(b)
-		
+
 		fmt.Println(string(b))
 	}
 	if err != nil {
-			fmt.Println("Error reading file:", err)
-		}
+		fmt.Println("Error reading file:", err)
+	}
 }
 func openTestFileByBufioScan() {
 	fmt.Println("openTestFileByBufioScan()")
