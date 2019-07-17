@@ -1,17 +1,24 @@
-package write2file_test
+package write2file
 
 import (
-	"filehandling/write2file"
 	"testing"
 )
 
 func TestCheckAllAttrNotEmpty(t *testing.T) {
 	t.Run("1st",
 		func(t *testing.T) {
-			write2file.TestCheckAllAttrNotEmpty(t, false, "", "a", 0)
+			if checkAllAttrNotEmpty("", "a", 0) == false {
+				t.Log("checkAllAttrNotEmpty(\"\", \"a\", 0)==false - OK")
+			} else {
+				t.Error("checkAllAttrNotEmpty(\"\", \"a\", 0)==false - FAILED")
+			}
 		})
 	t.Run("2nd",
 		func(t *testing.T) {
-			write2file.TestCheckAllAttrNotEmpty(t, true, "parameter", 1, 2.2, true)
+			if checkAllAttrNotEmpty("parameter", 1, 2.2, true)== true {
+				t.Log("checkAllAttrNotEmpty(\"parameter\", 1, 2.2, true)== true - OK")
+			} else {
+				t.Error("checkAllAttrNotEmpty(\"parameter\", 1, 2.2, true)== true - FAILED")
+			}
 		})
 }
