@@ -5,7 +5,6 @@ import (
 	"log"
 	"os"
 	"reflect"
-	"testing"
 )
 
 func init() {
@@ -18,7 +17,7 @@ func checkAllAttrNotEmpty(i ...interface{}) bool {
 	cntNonEmptyValues := 0
 
 	for _, v := range i {
-		if typ := reflect.TypeOf(v); reflect.ValueOf(v) != reflect.Zero(typ) {
+		if typ := reflect.TypeOf(v);  reflect.ValueOf(v).Interface() != reflect.Zero(typ).Interface() {
 			cntNonEmptyValues++
 		}
 	}
@@ -27,15 +26,6 @@ func checkAllAttrNotEmpty(i ...interface{}) bool {
 	}
 	return false
 
-}
-
-//TestCheckAllAttrNotEmpty exports checkAllAttrNotEmpty for testing
-func TestCheckAllAttrNotEmpty(t *testing.T, shouldReturn bool, i ...interface{}) {
-	if r := checkAllAttrNotEmpty(i); r != shouldReturn {
-		t.Errorf("TestCheckAllAttrNotEmpty failed with %v, expected %v, returned %v", i, shouldReturn, r)
-	} else {
-		t.Log("TestCheckAllAttrNotEmpty is OK")
-	}
 }
 
 //WriteStringToFile writes incoming string to specified file
