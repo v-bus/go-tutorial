@@ -5,3 +5,4 @@ bin/
 *.a
 src/github.com/
 src/golang.org/
+.vscode/settings.json
