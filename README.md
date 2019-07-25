@@ -100,3 +100,14 @@ go tutorial by (c) Naveen Ramanathan
    * read using  `packr` incapsulated file to binary code
    * read using `bufio` byte read and scanline
 * Writing Files [src\filehandling\write2file](https://github.com/viktor-bushmin/go-tutorial/tree/master/src/firstclassfunc/write2file)
+
+
+# SNIPPETS
+
+## INSTALL GO PROJECT DEPENDENCIES
+
+To install all dependencies of a Golang project or golang projects recursively with the go get command, change directory into the project and simply run:
+
+`go get ./...`
+
+to install test enviroment add `-t` option
