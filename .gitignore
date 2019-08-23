@@ -6,3 +6,4 @@ bin/
 src/github.com/
 src/golang.org/
 .vscode/settings.json
+.vscode/launch.json
